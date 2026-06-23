@@ -1,0 +1,38 @@
+Language: Cpp
+BasedOnStyle: LLVM
+
+# Indentação e Tabs
+UseTab: Always
+IndentWidth: 4
+TabWidth: 4
+
+# Estilo de chaves (Linux/K&R: chaves na mesma linha que o comando)
+BreakBeforeBraces: Linux
+
+# Quebrar a linha após template <typename T>
+AlwaysBreakTemplateDeclarations: Yes
+
+# Ponteiros na esquerda (int* p em vez de int *p)
+PointerAlignment: Left
+
+# Impede que funções curtas fiquem em uma linha
+AllowShortFunctionsOnASingleLine: None
+
+AlignConsecutiveDeclarations:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+
+AlignConsecutiveAssignments:
+  Enabled: true
+  AcrossEmptyLines: false
+  AcrossComments: false
+
+# Impede que blocos curtos fiquem em uma linha: if (a) { return; } -> quebra
+AllowShortBlocksOnASingleLine: Never
+
+# Garante que o fechamento de chaves de namespaces/classes não tente "economizar" linha
+MaxEmptyLinesToKeep: 1
+
+# Largura máxima da linha
+ColumnLimit: 100
